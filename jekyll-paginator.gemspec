@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jekyll-paginate/version'
+require 'jekyll-paginator/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-paginate"
-  spec.version       = Jekyll::Paginate::VERSION
-  spec.authors       = ["Parker Moore"]
-  spec.email         = ["parkrmoore@gmail.com"]
-  spec.summary       = %q{Built-in Pagination Generator for Jekyll}
-  spec.homepage      = "https://github.com/jekyll/jekyll-paginate"
+  spec.name          = "jekyll-paginator"
+  spec.version       = Jekyll::Paginator::VERSION
+  spec.authors       = ["Shiva Bhusal"]
+  spec.email         = ["hotline.shiva@gmail.com"]
+  spec.summary       = %q{Easy to use Pagination Generator for Jekyll with multiple pages support. }
+  spec.homepage      = "https://shivabhusal.github.io/jekyll-paginator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

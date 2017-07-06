@@ -1,4 +1,4 @@
-# Jekyll::Paginate
+# Jekyll::Paginator
 
 Default pagination generator for Jekyll.
 
@@ -8,7 +8,7 @@ Default pagination generator for Jekyll.
 
 Add this line to your application's Gemfile:
 
-    gem 'jekyll-paginate'
+    gem 'jekyll-paginator'
 
 And then execute:
 
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install jekyll-paginate
+    $ gem install jekyll-paginator
 
 ## Usage
 
@@ -25,8 +25,8 @@ break the main listing of posts up into smaller lists and display them over
 multiple pages. Jekyll offers a pagination plugin, so you can automatically
 generate the appropriate files and folders you need for paginated listings.
 
-For Jekyll 3, include the `jekyll-paginate` plugin in your Gemfile and in
-your `_config.yml` under `gems`. For Jekyll 2, this is standard.
+For Jekyll 3, include the `jekyll-paginator` plugin in your Gemfile and in
+your `_config.yml` under `plugins`. For Jekyll 2, this is under `gems`.
 
 <div class="note info">
   <h5>Pagination only works within HTML files</h5>
@@ -55,6 +55,12 @@ You may also specify the destination of the pagination pages:
 
 ```yaml
 paginate_path: "/blog/page:num/"
+```
+>**Note:**  
+The above mentioned syntax belongs to `jekyll-paginate` gem, so the following deprecation warnings you will see:
+```
+Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. 
+Ensure you have `plugins: [jekyll-paginate]` in your configuration file."
 ```
 
 This will read in `blog/index.html`, send it each pagination page in Liquid as
