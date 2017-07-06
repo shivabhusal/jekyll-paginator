@@ -1,5 +1,5 @@
 require 'jekyll'
-require File.expand_path("../lib/jekyll-paginate", File.dirname(__FILE__))
+require File.expand_path("../lib/jekyll-paginator", File.dirname(__FILE__))
 
 module TestMethods
   def test_dir(*subdirs)

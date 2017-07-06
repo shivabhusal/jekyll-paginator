@@ -1,5 +1,5 @@
 module Jekyll
-  module Paginate
+  module Paginator
     class Pagination < Generator
       # This generator is safe from arbitrary code execution.
       safe true
@@ -48,7 +48,7 @@ module Jekyll
       
       private :handle_pagination
       
-      # Paginates the blog's posts. Renders the index.html file into paginated
+      # Paginators the blog's posts. Renders the index.html file into paginated
       # directories, e.g.: page2/index.html, page3/index.html, etc and adds more
       # site-wide data.
       #
